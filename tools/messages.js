@@ -1,7 +1,8 @@
 const moment = require('moment');
 
 function formatMessage(username, text) {
-  let time = moment().utcOffset(3);
+  let time = moment().local();
+  
   return {
     username, 
     text,
