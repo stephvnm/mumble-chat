@@ -1,11 +1,11 @@
 const moment = require('moment');
 
 function formatMessage(username, text) {
-  moment.locale('bg');
+  let time = moment.local();
   return {
     username, 
     text,
-    timestamp: moment().format('LT')
+    timestamp: time.format('hh:mm')
   }
 }
 
