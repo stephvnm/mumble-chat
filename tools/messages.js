@@ -1,7 +1,7 @@
 const moment = require('moment');
 
 function formatMessage(username, text) {
-  moment.locale();
+  moment.locale('bg');
   return {
     username, 
     text,
